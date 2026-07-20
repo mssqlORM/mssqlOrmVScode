@@ -1,6 +1,6 @@
-# mssqlOrmVScode
+# an5OrmVScode
 
-VS Code extension for MSSQL ORM schema files. Provides syntax highlighting, formatting, and snippets for `.mssql` files.
+VS Code extension for AN5 ORM schema files. Provides syntax highlighting, formatting, and snippets for `.an5` files.
 
 ## Features
 
@@ -13,7 +13,7 @@ VS Code extension for MSSQL ORM schema files. Provides syntax highlighting, form
 ### From VSIX
 
 ```bash
-code --install-extension mssql-orm-vscode-1.0.1.vsix
+code --install-extension an5-orm-vscode-1.0.1.vsix
 ```
 
 ### From Source
@@ -27,11 +27,11 @@ Then press `F5` in VS Code to launch the Extension Development Host.
 
 ## Usage
 
-Open any `.mssql` file to get syntax highlighting and formatting.
+Open any `.an5` file to get syntax highlighting and formatting.
 
 ### Schema Syntax
 
-```mssql
+```an5
 model User {
   id        NVARCHAR(255) @id @default(uuid())
   email     NVARCHAR(255) @unique
@@ -48,7 +48,7 @@ model User {
 Press `Shift+Alt+F` (Windows/Linux) or `Shift+Option+F` (Mac) to format the document.
 
 **Before:**
-```mssql
+```an5
 model User {
 id NVARCHAR(255) @id @default(uuid())
 email NVARCHAR(255) @unique
@@ -58,7 +58,7 @@ createdAt DATETIME2 @default(now())
 ```
 
 **After:**
-```mssql
+```an5
 model User {
   id        NVARCHAR(255) @id @default(uuid())
   email     NVARCHAR(255) @unique

@@ -93,7 +93,7 @@ function formatEnumBlock(lines: string[]): string[] {
 }
 
 export function activate(context: vscode.ExtensionContext) {
-  const formatter = vscode.languages.registerDocumentFormattingEditProvider('mssql-schema', {
+  const formatter = vscode.languages.registerDocumentFormattingEditProvider('an5-schema', {
     provideDocumentFormattingEdits(document: vscode.TextDocument): vscode.TextEdit[] {
       const edits: vscode.TextEdit[] = [];
       const text = document.getText();

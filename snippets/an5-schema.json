@@ -124,7 +124,7 @@
     "prefix": "generator",
     "body": [
       "generator ${1:client} {",
-      "  provider = \"${2:mssql-orm}\"",
+      "  provider = \"${2:an5-orm}\"",
       "}"
     ],
     "description": "Insert a generator block"

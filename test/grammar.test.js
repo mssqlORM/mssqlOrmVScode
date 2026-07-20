@@ -2,7 +2,7 @@ const assert = require('assert');
 const fs = require('fs');
 const path = require('path');
 
-const grammarPath = path.join(__dirname, '..', 'syntaxes', 'mssql.tmLanguage.json');
+const grammarPath = path.join(__dirname, '..', 'syntaxes', 'an5.tmLanguage.json');
 const grammar = JSON.parse(fs.readFileSync(grammarPath, 'utf8'));
 const pattern = grammar.repository.types.patterns[0].match;
 

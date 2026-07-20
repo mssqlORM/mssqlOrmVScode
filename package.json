@@ -1,7 +1,7 @@
 {
-  "name": "mssql-orm-vscode",
-  "displayName": "MSSQL ORM Schema Tooling",
-  "description": "Syntax highlighting and formatting for .mssql schema files.",
+  "name": "an5-orm-vscode",
+  "displayName": "AN5 ORM Schema Tooling",
+  "description": "Syntax highlighting and formatting for .an5 schema files.",
   "version": "1.0.1",
   "publisher": "antigravity",
   "engines": {
@@ -12,34 +12,34 @@
     "Formatters"
   ],
   "activationEvents": [
-    "onLanguage:mssql-schema"
+    "onLanguage:an5-schema"
   ],
   "main": "./dist/extension.js",
   "contributes": {
     "languages": [
       {
-        "id": "mssql-schema",
+        "id": "an5-schema",
         "aliases": [
-          "MSSQL Schema",
-          "mssql-schema"
+          "AN5 Schema",
+          "an5-schema"
         ],
         "extensions": [
-          ".mssql"
+          ".an5"
         ],
         "configuration": "./language-configuration.json"
       }
     ],
     "grammars": [
       {
-        "language": "mssql-schema",
-        "scopeName": "source.mssql-schema",
-        "path": "./syntaxes/mssql.tmLanguage.json"
+        "language": "an5-schema",
+        "scopeName": "source.an5-schema",
+        "path": "./syntaxes/an5.tmLanguage.json"
       }
     ],
     "snippets": [
       {
-        "language": "mssql-schema",
-        "path": "./snippets/mssql-schema.json"
+        "language": "an5-schema",
+        "path": "./snippets/an5-schema.json"
       }
     ]
   },
